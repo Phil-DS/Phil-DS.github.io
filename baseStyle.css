@@ -1,3 +1,31 @@
-h1 {
-	background-color: #2AA9E0
+#title {
+	background-color: #2AA9E0;
+	padding: 4px;
+	border: 2px solid #0d4259;
+	border-radius: 4px
+}
+
+.gitList {
+    width: 450px;
+}
+
+.gitList ul li {
+    width: 150px;
+    height: 100px;
+    background-color: #2AA9E0;
+	border: 2px solid black;
+	border-radius: 4px;
+    float: left;
+	padding: 4px
+}
+
+.gitList ul {
+    display: inline;
+}
+
+.gitList li:hover{
+	background-color: white;
+}
+.gitList li:link li:visited{
+	color: black;
 }
