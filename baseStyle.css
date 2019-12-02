@@ -1,8 +1,21 @@
+html{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	margin: 0px;
+	font-family: 'Rokkitt', serif;
+}
+
 #title {
-	background-color: #2AA9E0;
+	background-color: #0B83B5;
 	padding: 4px;
-	border: 2px solid #0d4259;
-	border-radius: 4px
+	border: none;
+	top: 0px;
+	position: relative;
+	display: block;
+	font-family: 'Rokkitt', serif;
 }
 
 .gitList {
@@ -11,21 +24,21 @@
 
 .gitList ul li {
     width: 150px;
-    height: 100px;
-    background-color: #2AA9E0;
+    height: 150px;
+    background-color: #0B83B5;
 	border: 2px solid black;
 	border-radius: 4px;
-    float: left;
+    float: down;
 	padding: 4px
 }
 
 .gitList ul {
-    display: inline;
+    display: float;
 }
 
 .gitList li:hover{
-	background-color: white;
+	background-color: #645E5E;
 }
-.gitList li:link li:visited{
+.gitList li:link li:visited a:link a:visited{
 	color: black;
 }
