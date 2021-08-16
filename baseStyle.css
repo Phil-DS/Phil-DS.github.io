@@ -3,54 +3,103 @@ html{
 	padding: 0px;
 	margin: 0px;
 }
-h1 {
+/* h1 {
 	background-color: #2AA9E0
-}
+} */
 
 body{
 	margin: 0px;
 	font-family: 'Rokkitt', serif;
 }
 
-#title {
-	background-color: #0B83B5;
-	padding: 4px;
-	border: none;
-	top: 0px;
-	position: relative;
-	display: block;
-	font-family: 'Rokkitt', serif;
-}
-
-.projects-wrapper {
+.main {
 	display: grid;
-	grid-template-columns: repeat(4,1fr);
-	grid-template-rows: masonry;
-	gap: 5px;
+	width: 100%;
+	min-height: 100vh;
+	/* padding: .5rem; */
+	grid-template-rows: 4rem 2rem auto 2.5rem;
+	grid-template-columns: 1fr 300px;
 }
 
-.gitList {
-    width: 450px;
+.main > * {
+	padding: .5rem
 }
 
-.gitList ul li {
-    width: 150px;
-    height: 150px;
-    background-color: #0B83B5;
-	border: 2px solid black;
-	border-radius: 4px;
-    float: down;
-	padding: 4px
+.accent {
+	background-color: #272744;
+	color: #fbf5ef;
 }
 
-.gitList ul {
-    display: float;
+.title {
+	
+	text-align: center;
+	padding: .5rem;
+	font-family: 'Rokkitt', serif;
+	
 }
 
-.gitList li:hover{
-	background-color: #645E5E;
-}
-.gitList li:link li:visited a:link a:visited{
-	color: black;
+.full-span{
+	grid-column: 1 / -1;
 }
 
+.grid {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: .5rem;
+	flex-grow:1;
+	flex-shrink:0;
+	justify-content: space-around;
+}
+.grid-wrapper {
+		width: 100% !important;
+	}
+@media screen and (max-width: 768px){
+	body{
+		background-color: aqua;
+	}
+	.main {
+		grid-template-columns: 100% !important;
+    	grid-template-rows: auto !important;
+		justify-content: center;
+	}
+	.main>* {
+		grid-column: 1 / -1 !important;
+		grid-row: auto !important;
+	}
+
+	.grid {
+		flex-direction: column;
+		align-items: center;
+	}
+	.grid>*{
+		flex: 1;
+	}
+	
+}
+
+/* .grid-wrapper {
+	width: 260px;
+} */
+
+.navigator {
+	background: #494d7e;
+}
+
+.about-me {
+	display: flex;
+	justify-content: center;
+}
+
+/* .card {
+	width: 300px;
+} */
+
+.about-me .card {
+	height: 326px;
+}
+
+.grid-wrapper .card {
+	height: 100%;
+}
