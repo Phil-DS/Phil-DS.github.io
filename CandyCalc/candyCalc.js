@@ -1017,6 +1017,11 @@ document.getElementById("submit").onclick = function groupLUTChange(){
 	var expLevelReq = xpLUT[level-1][pokemon[3]]
 	
 	var expReq = expLevelReq - currExp
+
+	if(expReq < 0){
+		alert('Invalid Exp value - Target Pokemon exceeds the Exp. Requirement')
+		return
+	}
 	
 	var reqXL = Math.floor(expReq/30000)
 	var remXL = expReq%30000
@@ -1037,4 +1042,5 @@ document.getElementById("submit").onclick = function groupLUTChange(){
 	document.getElementById("valueM").innerHTML = reqM
 	document.getElementById("valueS").innerHTML = reqS
 	document.getElementById("valueXS").innerHTML = reqXS
+	document.getElementById("experienceValue").innerHTML = expReq
 }

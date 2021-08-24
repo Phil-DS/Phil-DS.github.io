@@ -1,0 +1,23 @@
+/* #results{
+    border-collapse: collapse;
+}
+
+#results tr td{
+    border: black 1px solid;
+}
+#results tr th{
+    border: black 1px solid;
+} */
+.outer-wrapper {
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.form-wrapper .row {
+   margin: .5rem
+}
+
+.form-wrapper .col-form-label{
+    font-weight: bold;
+}
